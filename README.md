@@ -3,7 +3,7 @@ Laravel's pagination with Blade templating support
 
 To install through *Composer*:
 
-1. Add the following instruction to the "require" object in your composer.json:
+1 - Add the following instruction to the "require" object in your composer.json:
 
 `"styde/blade-pagination": "dev-master"`
 
@@ -11,15 +11,15 @@ And execute `composer update` in the console, inside the project's folder.
 
 Or execute `composer require styde/seeder` in the console, inside the project's folder.
 
-2. Add the service provider to the config/app.php file of your Laravel app:
+2 - Add the service provider to the config/app.php file of your Laravel app:
 
 `'Styde\BladePagination\ServiceProvider'`
 
-3. To change the templates, please execute the following command in the console:
+3 - To change the templates, please execute the following command in the console:
 
 `php artisan vendor:publish`
 
-4. Then you can: 
+4 - Then you can: 
 
 Change the theme (if necessary) in `config/blade-pagination.php`
 
