@@ -1,0 +1,25 @@
+{
+    "name": "styde/blade-pagination",
+    "description": "Laravel's pagination with Blade templating support",
+    "type": "library",
+    "keywords": ["blade","pagination"],
+    "homepage": "http://github.com/StydeNet/blade-pagination",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Duilio Palacios",
+            "email": "admin@styde.net",
+            "homepage": "http://styde.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "laravel/framework": "5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Styde\\BladePagination\\": "src/"
+        }
+    }
+}
