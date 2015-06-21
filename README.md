@@ -1,15 +1,18 @@
 # blade-pagination
-Laravel's pagination with Blade templating support
+Laravel's pagination with Blade templating support.
+
+This package is compatible with Laravel 5.0 and Laravel 5.1
+(but if you are using Laravel 5.0 you should update to 5.1 it takes 20 minutes or so)
 
 To install through *Composer*:
 
 1 - Add the following instruction to the "require" object in your composer.json:
 
-`"styde/blade-pagination": "5@dev"`
+`"styde/blade-pagination": "5.1.*@dev"`
 
 And execute `composer update` in the console, inside the project's folder.
 
-Or execute `composer require styde/blade-pagination:5@dev` in the console, inside the project's folder.
+Or execute `composer require styde/blade-pagination:5.1.*@dev` in the console, inside the project's folder.
 
 2 - Add the service provider to the config/app.php file of your Laravel app:
 
@@ -24,8 +27,7 @@ Or execute `composer require styde/blade-pagination:5@dev` in the console, insid
 Change the theme (if necessary) in `config/blade-pagination.php`
 
 Change the templates in the `resources/views/blade-pagination` directory
-
-(Make sure to edit or add a new template according to the theme specify in `config/blade-pagination.php`)
+(make sure to edit or add a new template according to the theme specify in `config/blade-pagination.php`)
 
 Alternatively you can just copy the following code:
 
