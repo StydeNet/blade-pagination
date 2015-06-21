@@ -5,11 +5,11 @@ To install through *Composer*:
 
 1 - Add the following instruction to the "require" object in your composer.json:
 
-`"styde/blade-pagination": "dev-master"`
+`"styde/blade-pagination": "5@dev"`
 
 And execute `composer update` in the console, inside the project's folder.
 
-Or execute `composer require styde/seeder` in the console, inside the project's folder.
+Or execute `composer require styde/blade-pagination:5@dev` in the console, inside the project's folder.
 
 2 - Add the service provider to the config/app.php file of your Laravel app:
 
