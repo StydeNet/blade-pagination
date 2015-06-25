@@ -4,6 +4,8 @@ Laravel's pagination with Blade templating support.
 This package is compatible with Laravel 5.0 and Laravel 5.1
 (but if you are using Laravel 5.0 you should update to 5.1 it takes 20 minutes or so)
 
+There is another repository to quicly try/test this package: https://github.com/StydeNet/blade-pagination-tests (it includes some automatic tests with phpunit)
+
 To install through *Composer*:
 
 1 - Add the following instruction to the "require" object in your composer.json:
