@@ -1,22 +1,21 @@
-# blade-pagination
-Laravel's pagination with Blade templating support.
+# Laravel's pagination with Blade templating support.
 
 This package is compatible with Laravel 5.0 and Laravel 5.1
 (but if you are using Laravel 5.0 you should update to 5.1 it takes 20 minutes or so)
 
-There is another repository to quicly try/test this package: https://github.com/StydeNet/blade-pagination-tests (it includes some automatic tests with phpunit)
+There is another repository to quickly try/test this package: https://github.com/StydeNet/blade-pagination-tests (it includes some automatic tests with phpunit).
+
+## Installation
 
 To install through *Composer*:
 
-1 - Add the following instruction to the "require" object in your composer.json:
+1 - Add the following instruction to the "require" option in your composer.json:
 
-`"styde/blade-pagination": "5.1.*@dev"`
-
-And execute `composer update` in the console, inside the project's folder.
+`"styde/blade-pagination": "5.1.*@dev"` and execute `composer update` in the console, inside the project's folder.
 
 Or execute `composer require styde/blade-pagination:5.1.*@dev` in the console, inside the project's folder.
 
-2 - Add the service provider to the config/app.php file of your Laravel app:
+2 - Add the Service Provider to the `config/app.php` file of your Laravel app:
 
 `'Styde\BladePagination\ServiceProvider'`
 
@@ -26,7 +25,14 @@ Or execute `composer require styde/blade-pagination:5.1.*@dev` in the console, i
 
 4 - Then you can: 
 
-Change the theme (if necessary) in `config/blade-pagination.php`
+Change the theme (if necessary) in `config/blade-pagination.php`, example:
+
+```php
+return array(
+    'theme' => 'bootstrap'
+);
+```
+There are 3 available options: `bootstrap`, `foundation` and `materialize`.
 
 Change the templates in the `resources/views/blade-pagination` directory
 (make sure to edit or add a new template according to the theme specify in `config/blade-pagination.php`)
@@ -48,6 +54,6 @@ return array(
 );
 ```
 
-Paste it in a new file: `config/blade-pagination.php`
+## Create themes
 
-And change the default's theme name to materialize, foundation or create your own theme.
+You can create your own themes inside `resources/views/pagination`. Feel free to submit your theme via Pull Request or to `admin@styde.net`.
