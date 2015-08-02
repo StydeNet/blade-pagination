@@ -19,7 +19,10 @@ class Presenter implements PresenterContract {
     public function __construct(PaginatorContract $paginator, UrlWindow $window = null)
     {
         $this->paginator = $paginator;
-        $this->window = is_null($window) ? UrlWindow::make($paginator) : $window->get();
+
+        if ($this->hasPages()) {
+            $this->window = is_null($window) ? UrlWindow::make($paginator) : $window->get();
+        }
     }
 
     /**
@@ -29,6 +32,10 @@ class Presenter implements PresenterContract {
      */
     public function render()
     {
+        if (!$this->hasPages()) {
+            return '';
+        }
+
         $data = [
             'current'  => $this->paginator->currentPage(),
             'previous' => $this->getPrevious(),
